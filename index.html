@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasbih</title>
+  <!-- daisyUi and tailwind -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="m-20 ">
+  <main>
+    <div class="flex justify-center">
+      <h1 class=" text-6xl font-bold text-center
+      bg-gradient-to-r py-3 from-green-400  to-blue-500 inline-block text-transparent bg-clip-text">Digital Tasbih </h1>
+    </div>
+      <!-- container --> 
+      <section class="grid md:grid-cols-1 lg:grid-cols-3  mt-8 gap-3 border-2 items-center justify-center">
+        <div class="card w-full p-10 bg-base-100 shadow-2xl mb-50">
+          <div class="card-body">
+            <h2 class=" text-4xl text-center font-bold">Subhan Allah</h2>
+             <span  id="subhanAllahDisplay" class="text-4xl text-center mt-5 font-semibold">0</span>
+            <div class="card-actions justify-center flex mt-6 ">
+                <button id="sub-inc" class=" btn bg-green-500 text-white">INCRIMENT</button>
+                <button id="sub-dec" class="btn  bg-red-500 text-white">DECRIMENT</button>
+            </div>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="card w-full p-10 bg-base-100 shadow-2xl mb-50 ">
+          <div class="card-body">
+            <h2 class=" text-4xl text-center font-bold">Alhamdullah</h2>
+             <span  id="alhamdullahDispay" class="text-4xl text-center mt-5 font-semibold">0</span>
+            <div class="card-actions justify-center flex mt-6 ">
+                <button id="al-inc" class=" btn bg-green-500 text-white">INCRIMENT</button>
+                <button id="al-dec" class="btn  bg-red-500">DECRIMENT</button>
+            </div>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="card w-full p-10 bg-base-100 shadow-2xl mb-50">
+          <div class="card-body">
+            <h2 class=" text-4xl text-center font-bold">Allahuakber</h2>
+             <span  id="allahuakberDisplay" class="text-4xl text-center mt-5 font-semibold">0</span>
+            <div class="card-actions justify-center flex mt-6 ">
+                <button id="allah-inc" class=" btn bg-green-500">INCRIMENT</button>
+                <button id="allah-dec" class="btn  bg-red-500">DECRIMENT</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="reset-btn" class="mt-10 flex justify-center ">
+        <button class="btn bg-orange-400 text-white text-xl">RESET ALL TASBIH </button>
+      </div>
+  </main>
+  <script src="script.js"></script>
+  <script src="s.js"></script>
+</body>
+</html>
